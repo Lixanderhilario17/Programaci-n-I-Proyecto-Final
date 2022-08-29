@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen"  href="/static/css/devolucion.css">
+    <script src="/static/js/script2.js"></script> <script src="/static/js/libros.js"></script>
+    <title>Biblioteca Virtual DISAB</title>
+</head>
+<header>
+    <div class="logo"> 
+        <a href="{{url_for('Inicio')}}">
+        <img src="/static/img/emma.jpg">
+    </a>
+    </div>
+   <ul class="menu">
+    <li><a href="{{url_for('Inicio')}}">Inicio</a></li>
+    <li><a href="{{url_for('solicitud')}}">Registro</a></li>
+       <li><a href="{{url_for('catalogo')}}">Catálogo</a></li>
+   </ul>
+</header>
+
+ <body>
+<div class="titulo">
+  <h1>DEVOLUCIÓN DE LIBROS</h1>
+</div>
+<section class="Form-registrar">
+  <a href="{{url_for('solicitud')}}"><button class="botons1">Ingreso</button></a>
+  <a href="{{url_for('devolucion')}}"><button class="botons1">Devolucion</button></a>
+  <h4 class="titulo">Informacion Del Libro</h4>
+  <form action="gracias2.html">
+      <label for="" class="formulario__label"><span style="color: gray;" ><strong>INGRESE EL CODIGO DEL LIBRO:</strong></span></label>
+      <select name="Código" id="codigo" required>
+          <option>Seleciona un codigo</option>
+          <option>CADS</option>
+          <option>ECNTQLE</option>
+          <option>HP</option>
+          <option>ERDG</option>
+          <option>DQM</option>
+          <option>EP</option>
+          <option>EMMDO</option>
+          <option>LTH</option>
+        </select> 
+          <input Class="control" type="text" name="Titulo" id="titulo" placeholder="Titulo" required>
+          <input Class="control" type="text" name="Estante" id="estante" placeholder="Estante" required>
+          <input Class="control" type="text" name="Autor" id="autor" placeholder="Autor" required>
+          <input Class="control" type="text" name="Devuelto" id="devuelto" placeholder="Devuelto Por..." required>
+          <input Class="control" type="text" name="Curso" id="curso" placeholder="Curso" required>
+          <input Class="control" type="text" name="Registro" id="numero" placeholder="N. Registro" required>
+          <input class="control" type="date"name="Entrega" id="entrega" placeholder="Fecha De Entrega" required>
+          <input class="botons3" type="submit" value="Devolver"><form action="gracias.html">
+          <input class="botons4" type="reset" value="Borrar" onclick="Limpiar()">
+          <script src="/static/js/devolucion.js"></script>
+    </section>    
+  </body>
+</html>
