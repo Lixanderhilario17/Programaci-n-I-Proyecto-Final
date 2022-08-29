@@ -13,3 +13,5 @@ Al clikear el botón "Registro", mandará al usuario a un formulario donde podr�
 En el botón "Catálogo", nos mandará a un catálogo de libros que puede tener la biblioteca, viendo la información de estos libros, y mostrando el estatus actual del libro, es decir, si está disponible o no.
 
 Espero que pueda ser entendible dicho proyecto, ya que fue hecho con dedicación y tiempo. Además de algunos inconvenientes personales que me retrasaron a realizar este trabajo.
+
+Autor: Lixander Ysael Hilario López, matrícula 2021-1855.
